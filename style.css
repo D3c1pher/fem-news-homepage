@@ -1,0 +1,19 @@
+/* ===== Import Start ===== */
+
+/* ===== Import End ===== */
+
+/* ===== General Styling Start ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* ===== General Styling End ===== */
