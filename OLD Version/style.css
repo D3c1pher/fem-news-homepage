@@ -1,0 +1,120 @@
+/* ===== Import Start ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+/* ===== Import End ===== */
+
+/* ===== General Styling Start ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  color: hsl(236, 13%, 42%);
+  background-color: hsl(36, 100%, 99%);
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+/* ===== General Styling End ===== */
+
+/* ===== Navbar & Dialog Styling Start ===== */
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: none
+}
+
+.navbar-item {
+  color: hsl(236, 13%, 42%);
+  text-decoration: none;
+  margin: 1.25rem;
+}
+
+.navbar-item:hover, .dialog-menu-item:hover {
+  opacity: 0.8;
+}
+
+#menu-icon img {
+  display: inline;
+}
+
+#menu-toggle, #close-dialog {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dialog-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh; 
+  background-color: hsl(36, 100%, 99%);
+  padding: 80px 50px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-menu.show {
+  display: block;
+}
+
+#close-dialog {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.dialog-menu-item {
+  display: block;
+  margin: 2.5rem 0 0.25rem 0;
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+/* ===== Navbar & Dialog Styling End ===== */
+
+/* ===== Responsiveness Styling Start ===== */
+@media screen and (min-width: 376px) {
+  /* ===== Navbar & Dialog Styling Start ===== */
+  .dialog-menu {
+    width: 70%;
+  }
+  /* ===== Navbar & Dialog Styling End ===== */
+}
+
+@media screen and (min-width: 641px) {
+  /* ===== Navbar & Dialog Styling Start ===== */
+  .navbar-menu {
+    display: flex;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+  /* ===== Navbar & Dialog Styling End ===== */
+}
+/* ===== Responsiveness Styling End ===== */
